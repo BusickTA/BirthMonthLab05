@@ -25,7 +25,6 @@ public class RPSAssignment {
         } while (replay.equalsIgnoreCase("Y"));
 
         System.out.println("Thank you for playing!");
-
     }
 
     static boolean validinput(String choice) {
@@ -35,36 +34,30 @@ public class RPSAssignment {
 
     private static void Winner(String player1, String player2) {
         if (player1.equalsIgnoreCase("R")) {
-            if(player2.equalsIgnoreCase("R")){
-                System.out.println("It is a tie");
-            }else if (player1.equalsIgnoreCase("R")) {
-                if (player2.equalsIgnoreCase("P")) {
-                    System.out.println("Player2 wins, paper covers rock!");
-                } else {
-                    System.out.println("Player1 wins, rock beats scissors!");
-                }
-
-            } else if (player1.equalsIgnoreCase("P")) {
-                if(player2.equalsIgnoreCase("P"))
-                    System.out.println("It is a tie");
-            }
-            if (player2.equalsIgnoreCase("S")) {
-                System.out.println("Player2 wins, scissors cut paper!");
+            if (player2.equalsIgnoreCase("R")) {
+                System.out.println("It is a tie.");
+            } else if (player2.equalsIgnoreCase("P")) {
+                System.out.println("Player 2 wins, paper covers rock!");
             } else {
-                System.out.println("Player1 wins, paper covers rock!");
+                System.out.println("Player 1 wins, rock beats scissors!");
             }
-
+        } else if (player1.equalsIgnoreCase("P")) {
+            if (player2.equalsIgnoreCase("P")) {
+                System.out.println("It is a tie.");
+            } else if (player2.equalsIgnoreCase("S")) {
+                System.out.println("Player 2 wins, scissors cut paper!");
+            } else {
+                System.out.println("Player 1 wins, paper covers rock!");
+            }
         } else if (player1.equalsIgnoreCase("S")) {
             if (player2.equalsIgnoreCase("S")) {
-                System.out.println("It is a tie");
-            }
-            if (player2.equalsIgnoreCase("R")) {
-                System.out.println("Player2 wins, rock beats scissors!");
+                System.out.println("It is a tie.");
+            } else if (player2.equalsIgnoreCase("R")) {
+                System.out.println("Player 2 wins, rock beats scissors!");
             } else {
-                System.out.println("Player1 wins, scissors cut paper!");
+                System.out.println("Player 1 wins, scissors cut paper!");
             }
-        } else {
-            System.out.println("Please choose R, P, or S.");
         }
     }
+
 }
