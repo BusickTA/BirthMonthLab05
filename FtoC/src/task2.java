@@ -23,9 +23,9 @@ public class task2 {
             gasPrice = in.nextDouble();
         } while (gasPrice <0);
           costFor100Miles = (100/mpg) * gasPrice;
-        System.out.println("Your cost to drive 100 miles is" + costFor100Miles);
+        System.out.println("Your cost to drive 100 miles is " + costFor100Miles);
         maximumDistance = (tankGallons * mpg);
-        System.out.println("Your max distance you can go is" + maximumDistance);
+        System.out.println("Your max distance you can go is " + maximumDistance);
 
         in.close();
     }

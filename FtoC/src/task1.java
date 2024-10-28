@@ -21,7 +21,6 @@ public class task1 {
 
         f = (c * 1.8) + 32;
 
-        System.out.printf("%.2f°C is equivalent to %.2f°F%n", c, f);
 
         // Test known freezing and boiling points
         if (c == 0) {
